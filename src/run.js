@@ -70,7 +70,6 @@ const run = async () => {
     }
   }
   // 刷磁盘
-  await db.flushed();
   await db.close();
 };
 
