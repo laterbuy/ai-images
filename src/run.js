@@ -60,7 +60,7 @@ const run = async () => {
       const response = await uploadFileToGitHub(
         `${process.cwd()}/outputs/${list[i]}-${datas[i].fileName}`
       );
-      if (response.data?.content) {
+      if (response?.data?.content) {
         console.log("put db", datas[i].id);
         await db.put(datas[i].id, {
           fileName: datas[i].fileName,
