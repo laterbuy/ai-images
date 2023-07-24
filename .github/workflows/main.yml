@@ -1,11 +1,11 @@
 name: Node.js CI
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 23 * * *'
+#   push:
+#     branches:
+#       - main
+#   schedule:
+#     - cron: '0 23 * * *'
 env:
   MY_TOKEN: ${{ secrets.MY_TOKEN }}
 
